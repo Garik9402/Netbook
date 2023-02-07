@@ -3,3 +3,162 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v12-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/inter-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin-regular.woff") format("woff"), url("../fonts/inter-v12-latin-regular.ttf") format("truetype"), url("../fonts/inter-v12-latin-regular.svg#Inter") format("svg");
+  /* Legacy iOS */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v12-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/inter-v12-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-500.woff2") format("woff2"), url("../fonts/inter-v12-latin-500.woff") format("woff"), url("../fonts/inter-v12-latin-500.ttf") format("truetype"), url("../fonts/inter-v12-latin-500.svg#Inter") format("svg");
+  /* Legacy iOS */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v12-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/inter-v12-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-600.woff2") format("woff2"), url("../fonts/inter-v12-latin-600.woff") format("woff"), url("../fonts/inter-v12-latin-600.ttf") format("truetype"), url("../fonts/inter-v12-latin-600.svg#Inter") format("svg");
+  /* Legacy iOS */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v12-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/inter-v12-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-700.woff2") format("woff2"), url("../fonts/inter-v12-latin-700.woff") format("woff"), url("../fonts/inter-v12-latin-700.ttf") format("truetype"), url("../fonts/inter-v12-latin-700.svg#Inter") format("svg");
+  /* Legacy iOS */
+}
+.header {
+  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+}
+.header__top {
+  position: relative;
+  padding: 22px 0px;
+}
+.header__top::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #217BF4;
+  opacity: 0.1;
+  bottom: 0;
+  left: 0;
+}
+.header__top-inner {
+  max-width: 1210px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__top-start-items {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 72px;
+}
+.header__menu-list-item {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #686868;
+  cursor: pointer;
+}
+.header__menu-list-item:not(:last-child) {
+  margin-right: 32px;
+}
+.header__top-end-items {
+  display: flex;
+  align-items: center;
+}
+.header__search-box {
+  position: relative;
+  margin-right: 47px;
+}
+.header__search-box::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/search-icon.svg);
+  background-repeat: no-repeat;
+  left: 0;
+  top: 55%;
+  transform: translateY(-50%);
+  border: 1px solid #E5E5E5;
+}
+.header__search-box::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #E5E5E5;
+  left: 0;
+  bottom: -18px;
+}
+.header__search {
+  outline: none;
+  border: none;
+  max-width: 105px;
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #686868;
+  padding-left: 20px;
+}
+.logo {
+  width: 143px;
+  height: 34px;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+}
+
+.btn {
+  background: #217BF4;
+  box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+  border-radius: 14px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn--type-login {
+  padding: 18px 44px;
+}
