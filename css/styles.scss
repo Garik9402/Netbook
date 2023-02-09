@@ -1104,3 +1104,112 @@
 
      }
   }
+
+  .aplication {
+     background-color: #E5F0FD;
+
+     &__inner {
+        position: relative;
+        max-width: 1210px;
+        width: 100%;
+        padding: 122px 20px;
+        margin: 0 auto;
+        display: flex;
+        //   background: url(../images/Mask.png) no-repeat;
+        //   background-size: cover;
+        //   background-position: calc(100% + 100px);
+
+
+        //   @media (max-width:850px) {
+        //      background-size: calc(100% + 30%);
+        //   }
+
+        @include mq (lg) {
+           padding: 20px 20px;
+           flex-direction: column;
+           align-items: center;
+           //  background-position: 97% bottom;
+           //  background-size: 1137px 423px;
+           //   margin: 0 auto;
+        }
+
+        //   @media (max-width:576px) {
+        //      background-size: contain 1000px;
+        //      background-position: right bottom;
+        //   }
+     }
+
+     &__desc {}
+
+     &__desc-column {
+        max-width: 351px;
+        width: 100%;
+
+        @include mq (lg) {
+           max-width: 100%;
+
+        }
+     }
+
+     &__desc-overhead {
+        @include mq (lg) {
+           text-align: center;
+        }
+     }
+
+     &__desc-title {
+        @include mq (lg) {
+           text-align: center;
+        }
+     }
+
+     &__desc-text {
+        margin-bottom: 36px;
+
+        @include mq (lg) {
+           text-align: center;
+        }
+     }
+
+     &__images {
+        display: flex;
+        gap: 20px;
+
+        @include mq (lg) {
+           justify-content: center;
+        }
+     }
+
+     &__img-link {
+        display: inline-block;
+     }
+
+     &__big-img {
+        position: absolute;
+        width: 440px;
+        right: 35px;
+        bottom: 0px;
+
+        @media (max-width:850px) {
+           width: 370px;
+           right: 25px;
+           height: 482px;
+        }
+
+        @include mq (lg) {
+           position: static;
+           max-width: 377px;
+           width: 100%;
+           height: 431px;
+        }
+
+     }
+
+     &__img {
+        display: inline-block;
+        width: 144px;
+        height: 52px;
+        border-radius: 6px;
+     }
+
+  }
