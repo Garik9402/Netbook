@@ -602,6 +602,12 @@
   color: #0A093D;
   margin-bottom: 16px;
 }
+.block-about__title--type-news {
+  line-height: 36px;
+}
+.block-about__title--type-teem {
+  line-height: 36px;
+}
 @media only screen and (max-width: 767px) {
   .block-about__title {
     font-size: 32px;
@@ -1112,4 +1118,219 @@
   width: 144px;
   height: 52px;
   border-radius: 6px;
+}
+
+.news {
+  padding: 130px 0px;
+}
+@media only screen and (max-width: 767px) {
+  .news {
+    padding: 20px 0px;
+  }
+}
+.news__inner {
+  max-width: 1210px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.news__desc {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  .news__desc {
+    margin-bottom: 20px;
+  }
+}
+.news__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .news__list {
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .news__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.news__list-item {
+  max-width: 340px;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .news__list-item {
+    max-width: 100%;
+  }
+}
+.news__list-item-img {
+  display: block;
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .news__list-item-img {
+    width: 100%;
+  }
+}
+.news__list-item-content {
+  padding-left: 63px;
+  position: relative;
+}
+.news__list-item-content::before {
+  content: "";
+  position: absolute;
+  max-width: 39px;
+  width: 100%;
+  height: 1px;
+  background-color: #FFAF2E;
+  left: 10px;
+  top: 21px;
+}
+.news__list-item-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #2F2C4A;
+}
+.news__list-item-link {
+  position: relative;
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #656464;
+  text-decoration: none;
+  margin-top: 24px;
+}
+.news__list-item-link--color-blue {
+  color: #217BF4;
+}
+.news__list-item-link-arrow {
+  margin-left: 3px;
+}
+
+.footer__top {
+  padding: 78px 0px 85px;
+  background: #2B2B39;
+}
+.footer__top-inner {
+  max-width: 1210px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer__menu-blocks {
+  max-width: 668px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer__menu-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+  margin-bottom: 22px;
+}
+.footer__menu-list {
+  list-style: none;
+}
+.footer__menu-list-item {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 46px;
+  letter-spacing: 0.0125em;
+  color: #E7E7E7;
+}
+.footer__menu-list-item:not(:last-child) {
+  margin-bottom: 3px;
+}
+.footer__subscribe-block {
+  max-width: 339px;
+  width: 100%;
+}
+.footer__subscribe-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+.footer__subscribe-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #E7E7E7;
+  margin-bottom: 32px;
+}
+.footer__subscribe-input-box {
+  position: relative;
+  max-width: 339px;
+  width: 100%;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__subscribe-input {
+  padding: 16px 0px 16px 24px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  color: #717179;
+}
+.footer__subscribe-input::-moz-placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.0125em;
+  color: #717179;
+}
+.footer__subscribe-input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.0125em;
+  color: #717179;
+}
+.footer__subscribe-btn {
+  position: absolute;
+  max-width: 126px;
+  width: 100%;
+  height: 100%;
+  padding: 15px 0px 16px;
+  border: 1px solid #FFFFFF;
+  background: #FFFFFF;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  right: -1px;
+  top: 0;
+  color: #2B2B39;
+  z-index: 1;
 }
