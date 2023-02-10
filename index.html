@@ -15,7 +15,11 @@
          <div class="header__top">
             <div class="header__top-inner">
                <div class="header__top-start-items">
-                  <img class="logo header__logo" src="./images/logo.png" alt="logo">
+                  <a href="#" class="header__logo-link">
+                     <svg class="footer__logo logo" viewBox="0 0 143 34" role="logo">
+                        <use href="./sprites/sprite.svg#logo"></use>
+                     </svg>
+                  </a>
                   <div class="header__burger">
                      <span class="header__burger-line"></span>
                   </div>
@@ -30,7 +34,7 @@
                </div>
                <div class="header__top-end-items">
                   <div class="header__search-box">
-                     <input type="text" class="header__search" placeholder="Search Hare...">
+                     <input type="text" class="header__search" name="search" placeholder="Search Hare...">
                   </div>
                   <button class="header__btn btn btn--type-login" type="button">Log in</button>
                </div>
@@ -190,12 +194,13 @@
                </div>
                <div class="teem__tub-box">
                   <ul class="teem__tub-list">
-                     <li class="teem__tub-item">Newst</li>
-                     <li class="teem__tub-item">Popular</li>
-                     <li class="teem__tub-item  teem__tub-item--active-tub">Active</li>
+                     <li data-id="2" class="teem__tub-item">Newst</li>
+                     <li data-id="1" class="teem__tub-item">Popular</li>
+                     <li data-id="0" class="teem__tub-item  teem__tub-item--active-tub">Active</li>
+                  </ul>
                </div>
             </div>
-            <ul class="teem__list">
+            <ul class="teem__list teem__list--active">
                <li class="teem__list-item">
                   <div class="teem__list-item-img-w">
                      <img class="teem__list-item-img" src="./images/participant1.jpg" alt="participant-img">
@@ -230,6 +235,83 @@
                   <div class="teem__list-item-content">
                      <span class="teem__list-item-name">Alia Karon</span>
                      <p class="teem__list-item-pseudo-name">@Alia</p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="teem__list">
+               <li class="teem__list-item">
+                  <div class="teem__list-item-img-w">
+                     <img class="teem__list-item-img" src="./images/participant4.jpg" alt="participant-img">
+                  </div>
+                  <div class="teem__list-item-content">
+                     <span class="teem__list-item-name">Alia Karon</span>
+                     <p class="teem__list-item-pseudo-name">@Alia</p>
+                  </div>
+               </li>
+               <li class="teem__list-item">
+                  <div class="teem__list-item-img-w">
+                     <img class="teem__list-item-img" src="./images/participant2.png" alt="participant-img">
+                  </div>
+                  <div class="teem__list-item-content">
+                     <span class="teem__list-item-name">Kazi Rahman</span>
+                     <p class="teem__list-item-pseudo-name">@Rahman</p>
+                  </div>
+               </li>
+               <li class="teem__list-item">
+                  <div class="teem__list-item-img-w">
+                     <img class="teem__list-item-img" src="./images/participant3.jpg" alt="participant-img">
+                  </div>
+                  <div class="teem__list-item-content">
+                     <span class="teem__list-item-name">Masterero Ali</span>
+                     <p class="teem__list-item-pseudo-name">@Master</p>
+                  </div>
+               </li>
+               <li class="teem__list-item">
+                  <div class="teem__list-item-img-w">
+                     <img class="teem__list-item-img" src="./images/participant1.jpg" alt="participant-img">
+                  </div>
+                  <div class="teem__list-item-content">
+                     <span class="teem__list-item-name">Fahim Rahman</span>
+                     <p class="teem__list-item-pseudo-name">@rahman</p>
+                  </div>
+               </li>
+
+            </ul>
+            <ul class="teem__list">
+               <li class="teem__list-item">
+                  <div class="teem__list-item-img-w">
+                     <img class="teem__list-item-img" src="./images/participant2.png" alt="participant-img">
+                  </div>
+                  <div class="teem__list-item-content">
+                     <span class="teem__list-item-name">Kazi Rahman</span>
+                     <p class="teem__list-item-pseudo-name">@Rahman</p>
+                  </div>
+               </li>
+               <li class="teem__list-item">
+                  <div class="teem__list-item-img-w">
+                     <img class="teem__list-item-img" src="./images/participant4.jpg" alt="participant-img">
+                  </div>
+                  <div class="teem__list-item-content">
+                     <span class="teem__list-item-name">Alia Karon</span>
+                     <p class="teem__list-item-pseudo-name">@Alia</p>
+                  </div>
+               </li>
+               <li class="teem__list-item">
+                  <div class="teem__list-item-img-w">
+                     <img class="teem__list-item-img" src="./images/participant1.jpg" alt="participant-img">
+                  </div>
+                  <div class="teem__list-item-content">
+                     <span class="teem__list-item-name">Fahim Rahman</span>
+                     <p class="teem__list-item-pseudo-name">@rahman</p>
+                  </div>
+               </li>
+               <li class="teem__list-item">
+                  <div class="teem__list-item-img-w">
+                     <img class="teem__list-item-img" src="./images/participant3.jpg" alt="participant-img">
+                  </div>
+                  <div class="teem__list-item-content">
+                     <span class="teem__list-item-name">Masterero Ali</span>
+                     <p class="teem__list-item-pseudo-name">@Master</p>
                   </div>
                </li>
             </ul>
@@ -345,10 +427,10 @@
                   </div>
                </div>
                <div class="footer__subscribe-block">
-                  <div class="footer__subscribe-title">Subscribe Cirkle<br /> Newsletter</div>
-                  <p class="footer__subscribe-text">Subscribe to be the first one to know<br /> about updates. Enter your email</p>
+                  <div class="footer__subscribe-title">Subscribe Cirkle Newsletter</div>
+                  <p class="footer__subscribe-text">Subscribe to be the first one to know about updates. Enter your email</p>
                   <div class="footer__subscribe-input-box">
-                     <input type="text" class="footer__subscribe-input" placeholder="Email Address">
+                     <input type="text" class="footer__subscribe-input" name="email" placeholder="Email Address">
                      <button type="submit" class="footer__subscribe-btn">Subscribe</button>
                   </div>
                </div>
@@ -356,13 +438,53 @@
          </div>
          <div class="footer__bottom">
             <div class="footer__bottom-inner">
-
+               <p class="footer__bottom-text">Besnik Creative Agency.</p>
+               <a href="#" class="footer__logo-link">
+                  <svg class="footer__logo logo" viewBox="0 0 143 34" role="logo">
+                     <use href="./sprites/sprite.svg#logo"></use>
+                  </svg>
+               </a>
+               <div class="footer__socials">
+                  <a href="#" class="footer__social-link">
+                     <svg class="footer__social" viewBox="0 0 36 36" role="twitter">
+                        <use href="./sprites/sprite.svg#twitter"></use>
+                     </svg>
+                  </a>
+                  <a href="#" class="footer__social-link">
+                     <svg class="footer__social" viewBox="0 0 36 36" role="insatgramm">
+                        <use href="./sprites/sprite.svg#instagramm"></use>
+                     </svg>
+                  </a>
+                  <a href="#" class="footer__social-link">
+                     <svg class="footer__social" viewBox="0 0 36 36" role="facebook">
+                        <use href="./sprites/sprite.svg#facebook"></use>
+                     </svg>
+                  </a>
+                  <a href="#" class="footer__social-link">
+                     <svg class="footer__social" viewBox="0 0 36 36" role="linkedin">
+                        <use href="./sprites/sprite.svg#linkedin"></use>
+                     </svg>
+                  </a>
+               </div>
             </div>
          </div>
       </footer>
    </div>
-
+   <div class="popup-menu">
+      <div class="popup-menu__body">
+         <button class="popup-menu__swipe popup-menu__swipe-close" data-swipe-threshold="20" data-swipe-unit="px" data-swipe-timeout="500" data-swipe-ignore="false">></button>
+         <ul class="list popup-menu__list">
+            <li class="list-item popup-menu__list-item popup-menu-list-item">Home</li>
+            <li class="list-item popup-menu__list-item popup-menu-list-item">Community</li>
+            <li class="list-item popup-menu__list-item popup-menu-list-item">Blog</li>
+            <li class="list-item popup-menu__list-item popup-menu-list-item">Events</li>
+         </ul>
+      </div>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
    <script src="js/static.js"></script>
+   <script src="js/swiped-events.min.js"></script>
+   <script src="js/popup-menu.js"></script>
 </body>
 
 </html>
