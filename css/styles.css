@@ -1381,7 +1381,11 @@
 .footer__menu-list {
   list-style: none;
 }
-.footer__menu-list-item {
+.footer__menu-list-item:not(:last-child) {
+  margin-bottom: 3px;
+}
+.footer__menu-list-item-link {
+  text-decoration: none;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1389,9 +1393,6 @@
   letter-spacing: 0.0125em;
   color: #E7E7E7;
   cursor: pointer;
-}
-.footer__menu-list-item:not(:last-child) {
-  margin-bottom: 3px;
 }
 .footer__subscribe-block {
   max-width: 339px;
